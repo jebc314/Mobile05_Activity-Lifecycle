@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Activity Lifecycle</string>
+    <string name="create">Create: 0</string>
+    <string name="start">Start: 0</string>
+    <string name="resume">Resume: 0</string>
+    <string name="pause">Pause: 0</string>
+    <string name="stop">Stop: 0</string>
+    <string name="restart">Restart: 0</string>
+    <string name="destroy">Destroy: 0</string>
+    <string name="running">Running</string>
+    <string name="current">Current</string>
+    <string name="copy">
+Create
+Start
+Resume
+Pause
+Stop
+Restart
+Destroy
+create
+start
+resume
+pause
+stop
+restart
+destroy
+    </string>
+    <string name="reset_current">Reset Current</string>
+    <string name="reset_running">Reset Running</string>
+</resources>

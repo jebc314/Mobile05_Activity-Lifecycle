@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/reset_current"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_current"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentvalues_layout" />
+
+    <Button
+        android:id="@+id/reset_running"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_running"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reset_current"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/currentvalues_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/runningvalues_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/currentvalues_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/current_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/current_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/current_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resume"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/current_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/current_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/current_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/current_destroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/destroy"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/runningvalues_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/currentvalues_layout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/runningvalues_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/running"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/running_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/running_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/running_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resume"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/running_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/running_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/running_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/running_destroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/destroy"
+            android:textSize="25sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
